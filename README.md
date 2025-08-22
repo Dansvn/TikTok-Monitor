@@ -79,9 +79,9 @@ If successful, you'll see:
 [INFO] Launching Chrome browser...
 [INFO] Navigating to TikTok homepage...
 [INFO] Loading cookies...
-[HH:MM:SS] Followers: 123
-[HH:MM:SS] Following: 45
-[HH:MM:SS] Likes: 678
+[HH:MM:SS] Followers: ...
+[HH:MM:SS] Following: ...
+[HH:MM:SS] Likes: ...
 ```
 
 ---
@@ -94,6 +94,15 @@ If successful, you'll see:
 4. Monitors **reposts**, **favorites**, **likes**, and profile stats.
 5. Sends Discord notifications only when new videos are posted or profile stats change.
 6. Downloads new videos temporarily before sending to Discord, then deletes them locally.
+
+---
+
+Known Issues
+
+- Captcha: TikTok may occasionally present a captcha when using the script. This can temporarily block automated actions.
+
+- Photo Posts: The script only downloads videos. Posts that contain only photos will be skipped and not downloaded.
+
 
 ---
 
