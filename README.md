@@ -95,6 +95,26 @@ If successful, you'll see:
 5. Sends Discord notifications only when new videos are posted or profile stats change.
 6. Downloads new videos temporarily before sending to Discord, then deletes them locally.
 
+## Linux Notes
+
+- On Linux, the script uses Chromium instead of Google Chrome.
+- Install Chromium and Chromium Driver via apt:
+
+  ```bash
+  sudo apt install chromium chromium-driver
+  ```
+
+- Use the path to the Chromium binary in main.py:
+
+  options = uc.ChromeOptions()
+  options.binary_location = "/usr/bin/chromium"
+  driver = uc.Chrome(options=options, use_subprocess=True)
+
+- Avoid running Chrome in headless mode if you want to see the browser actions in Linux.
+- Make sure the Chromium version matches the Chromium Driver version.
+- Linux users may need to adjust paths depending on their distribution and installation method.
+
+
 ---
 
 Known Issues
