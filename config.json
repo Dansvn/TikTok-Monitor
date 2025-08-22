@@ -1,11 +1,10 @@
 {
-  "profile_url": "https://www.tiktok.com/@yourusername",
-  "refresh_interval": 20, 
+  "profile_url": "https://www.tiktok.com/@username",
+  "refresh_interval": 10,
   "webhooks": {
-    "likes": "DISCORD_WEBHOOK_URL",
-    "favorites": "DISCORD_WEBHOOK_URL",
+    "followers": "DISCORD_WEBHOOK_URL",
     "reposts": "DISCORD_WEBHOOK_URL",
-    "followers": "DISCORD_WEBHOOK_URL"
+    "favorites": "DISCORD_WEBHOOK_URL",
+    "likes": "DISCORD_WEBHOOK_URL"
   }
 }
-
